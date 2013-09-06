@@ -1,0 +1,4 @@
+.DS_Store
+codesniffer-report.txt
+docs
+node_modules

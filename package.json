@@ -1,0 +1,19 @@
+{
+  "name": "SimplePhotoAlbums",
+  "version": "1.0.0",
+  "description": "A WordPress plugin to convert a group of gallery shortcodes into a photo album.",
+  "homepage": "https://github.com/audiotheme/simple-photo-albums",
+  "author": {
+    "name": "Brady Vercher",
+    "url": "http://audiotheme.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/audiotheme/simple-photo-albums.git"
+  },
+  "main": "Gruntfile.js",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "matchdep": "~0.1.2"
+  }
+}
