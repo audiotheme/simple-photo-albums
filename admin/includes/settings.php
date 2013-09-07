@@ -11,10 +11,6 @@
 /**
  * Register plugin settings.
  *
- * Adds a setting to enable the text selected in the editor to be searched
- * automatically. This was the default behavior in versions prior to
- * version 1.1.2, but it can cause a delay on large sites.
- *
  * @since 1.0.0
  */
 function sphoa_register_settings() {

@@ -30,7 +30,7 @@
  */
 class Sphoa_GalleryScript_Jetpack_Carousel {
 	/**
-	 *
+	 * Load Jetpack Carousel extension.
 	 *
 	 * @since 1.0.0
 	 */
@@ -51,9 +51,12 @@ class Sphoa_GalleryScript_Jetpack_Carousel {
 	}
 
 	/**
-	 *
+	 * Register the Jetpack Carousel gallery script.
 	 *
 	 * @since 1.0.0
+	 *
+	 * @param array $scripts List of gallery scripts.
+	 * @return array
 	 */
 	public function register_addon( $scripts ) {
 		$scripts['jetpack-carousel'] = __( 'Jetpack Carousel', 'simple-photo-albums' );
@@ -201,6 +204,7 @@ class Sphoa_GalleryScript_Jetpack_Carousel {
 	 * @see Jetpack_Carousel::add_data_to_container()
 	 *
 	 * @param int $post_id Post ID.
+	 * @return array
 	 */
 	public function get_gallery_data( $post_id ) {
 		$blog_id = (int) get_current_blog_id();

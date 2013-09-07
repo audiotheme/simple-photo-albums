@@ -30,7 +30,7 @@
  */
 class Sphoa_GalleryScript_Swipebox {
 	/**
-	 *
+	 * Load Swipebox extension.
 	 *
 	 * @since 1.0.0
 	 */
@@ -48,9 +48,12 @@ class Sphoa_GalleryScript_Swipebox {
 	}
 
 	/**
-	 *
+	 * Register the Swipebox gallery script.
 	 *
 	 * @since 1.0.0
+	 *
+	 * @param array $scripts List of gallery scripts.
+	 * @return array
 	 */
 	public function register_addon( $scripts ) {
 		$scripts['swipebox'] = __( 'Swipebox', 'simple-photo-albums' );
@@ -58,7 +61,7 @@ class Sphoa_GalleryScript_Swipebox {
 	}
 
 	/**
-	 *
+	 * Enqueue styles and scripts.
 	 *
 	 * @since 1.0.0
 	 */
@@ -68,7 +71,7 @@ class Sphoa_GalleryScript_Swipebox {
 	}
 
 	/**
-	 *
+	 * Print scripts for integrating albums with Swipebox.
 	 *
 	 * @since 1.0.0
 	 */
