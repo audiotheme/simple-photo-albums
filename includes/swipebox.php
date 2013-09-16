@@ -83,8 +83,8 @@ class Sphoa_GalleryScript_Swipebox {
 				$attachment = get_post( $id );
 
 				$data[ 'album-' . $gallery_id ][] = array(
-					'href'     => wp_get_attachment_url( $id ),
-					'caption' => wptexturize( $attachment->post_excerpt ),
+					'href'  => wp_get_attachment_url( $id ),
+					'title' => wptexturize( $attachment->post_excerpt ),
 				);
 			}
 		}
