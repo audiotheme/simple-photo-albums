@@ -66,5 +66,9 @@ Yes. Find the Jetpack Carousel and Swipebox files in the plugin folder as an exa
 
 == Changelog ==
 
+= 1.0.1 =
+* Fix captions in the Swipebox extension.
+* Fix strict PHP notices.
+
 = 1.0 =
 * Initial release.
