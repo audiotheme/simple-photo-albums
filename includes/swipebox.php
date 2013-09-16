@@ -34,7 +34,7 @@ class Sphoa_GalleryScript_Swipebox {
 	 *
 	 * @since 1.0.0
 	 */
-	public function load() {
+	public static function load() {
 		add_filter( 'simple_photo_albums_gallery_scripts', array( __CLASS__, 'register_addon' ) );
 
 		// Don't register if the this isn't the active script.
@@ -55,7 +55,7 @@ class Sphoa_GalleryScript_Swipebox {
 	 * @param array $scripts List of gallery scripts.
 	 * @return array
 	 */
-	public function register_addon( $scripts ) {
+	public static function register_addon( $scripts ) {
 		$scripts['swipebox'] = __( 'Swipebox', 'simple-photo-albums' );
 		return $scripts;
 	}
@@ -65,7 +65,7 @@ class Sphoa_GalleryScript_Swipebox {
 	 *
 	 * @since 1.0.0
 	 */
-	public function register_assets() {
+	public static function register_assets() {
 		wp_enqueue_script( 'simple-photo-albums-swipebox', plugin_dir_url( __FILE__ ) . 'libraries/swipebox/jquery.swipebox.min.js', array( 'jquery' ), '1.2.1', true );
 		wp_enqueue_style( 'simple-photo-albums-swipebox', plugin_dir_url( __FILE__ ) . 'libraries/swipebox/swipebox.css' );
 	}
@@ -75,7 +75,7 @@ class Sphoa_GalleryScript_Swipebox {
 	 *
 	 * @since 1.0.0
 	 */
-	public function print_script( $albums ) {
+	public static function print_script( $albums ) {
 		// Build an array for output as a JavaScript object.
 		$data = array();
 		foreach ( $albums as $gallery_id => $gallery ) {

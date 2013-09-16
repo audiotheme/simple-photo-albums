@@ -34,7 +34,7 @@ class Sphoa_GalleryScript_Jetpack_Carousel {
 	 *
 	 * @since 1.0.0
 	 */
-	public function load() {
+	public static function load() {
 		if ( ! class_exists( 'Jetpack_Carousel' ) ) {
 			return;
 		}
@@ -58,7 +58,7 @@ class Sphoa_GalleryScript_Jetpack_Carousel {
 	 * @param array $scripts List of gallery scripts.
 	 * @return array
 	 */
-	public function register_addon( $scripts ) {
+	public static function register_addon( $scripts ) {
 		$scripts['jetpack-carousel'] = __( 'Jetpack Carousel', 'simple-photo-albums' );
 		return $scripts;
 	}
@@ -70,7 +70,7 @@ class Sphoa_GalleryScript_Jetpack_Carousel {
 	 *
 	 * @param array $albums List of photo albums.
 	 */
-	public function print_script( $albums ) {
+	public static function print_script( $albums ) {
 		// Build an array for output as a JSON object.
 		foreach ( $albums as $gallery_id => $gallery ) {
 			$images = array();
