@@ -229,4 +229,4 @@ class Sphoa_GalleryScript_Jetpack_Carousel {
 		return $extra_data;
 	}
 }
-add_action( 'plugins_loaded', array( 'Sphoa_GalleryScript_Jetpack_Carousel', 'load' ) );
+add_action( 'init', array( 'Sphoa_GalleryScript_Jetpack_Carousel', 'load' ) );
