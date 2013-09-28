@@ -41,6 +41,8 @@ add_action( 'admin_init', 'sphoa_register_settings' );
 function sphoa_gallery_script_field() {
 	$scripts  = sphoa()->get_gallery_scripts();
 	$settings = sphoa()->get_settings();
+
+	asort( $scripts );
 	?>
 	<select name="simple_photo_albums[gallery_script]" id="simple-photo-albums-gallery-script">
 		<option value=""></option>
