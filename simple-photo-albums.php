@@ -11,7 +11,7 @@
  * Plugin Name: Simple Photo Albums
  * Plugin URI: http://wordpress.org/plugins/simple-photo-albums/
  * Description: A shortcode for creating photo albums from a group of galleries.
- * Version: 1.0.1
+ * Version: 1.0.2
  * Author: AudioTheme
  * Author URI: http://audiotheme.com/
  * License: GPL-2.0+
