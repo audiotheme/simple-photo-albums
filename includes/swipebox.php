@@ -98,6 +98,9 @@ class Sphoa_GalleryScript_Swipebox {
 		?>
 		<script type="text/javascript">
 		jQuery(function($) {
+			// Try to remove existing handlers.
+			$('.simple-photo-albums .gallery a').off('click').removeClass('cboxElement');
+
 			$('.gallery').on('click', 'a[data-album-id]', function(e) {
 				e.preventDefault();
 				$.swipebox( simplePhotoAlbums[ $(this).data('album-id') ] );
