@@ -2,7 +2,7 @@
 Contributors: audiotheme, bradyvercher
 Tags: photos, albums, gallery
 Requires at least: 3.5
-Tested up to: 3.6.1
+Tested up to: 3.7
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -65,6 +65,9 @@ Installing Simple Photo Albums is just like installing most other plugins. [Chec
 Yes. Find the Jetpack Carousel and Swipebox files in the plugin folder as an example. Both are written as plugins to demonstrate how support can be added for just about any script.
 
 == Changelog ==
+
+= 1.0.3 =
+* Load the plugin text domain on 'plugins_loaded' in preparation for language packs.
 
 = 1.0.2 =
 * Try to remove existing lightbox scripts attached to Swipebox albums.

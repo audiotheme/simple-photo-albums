@@ -1,6 +1,6 @@
 {
   "name": "SimplePhotoAlbums",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "A WordPress plugin to convert a group of gallery shortcodes into a photo album.",
   "homepage": "https://github.com/audiotheme/simple-photo-albums",
   "author": {
