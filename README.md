@@ -4,7 +4,7 @@ A WordPress plugin to create photo albums from a group of native galleries.
 
 __Contributors:__ [Brady Vercher](https://github.com/bradyvercher)  
 __Requires:__ 3.5  
-__Tested up to:__ 3.7  
+__Tested up to:__ 3.8.1  
 __License:__ [GPL-2.0+](http://www.gnu.org/licenses/gpl-2.0.html)
 
 ## Usage ##
@@ -21,7 +21,7 @@ Wrap a group of `[gallery]` shortcodes with the `[simple_photo_album]` shortcode
 
 Each gallery becomes an album and requires clicking through to see the actual gallery itself. This example will render the same as `[gallery ids="1,4,7"]`, which admittedly isn't very useful.
 
-However, there are a few attributes that may be beneficial and things really shine when paired with third-party scripts like [Jetpack's Carousel](http://jetpack.me/support/carousel/) or [Swipebox](http://brutaldesign.github.io/swipebox/) -- native support is included for both (select one on the **Media &rarr; Settings** screen).
+However, there are a few attributes that may be beneficial and things really shine when paired with third-party scripts like [Jetpack's Carousel](http://jetpack.me/support/carousel/), [Magnific Popup](http://dimsemenov.com/plugins/magnific-popup/), or [Swipebox](http://brutaldesign.github.io/swipebox/) -- native support is included for all (select one on the **Media &rarr; Settings** screen).
 
 Galleries within the album shortcode may include a `gallery_link` attribute to link the cover image to an arbitrary permalink when a third-party script isn't being used:
 

@@ -1,32 +1,35 @@
-# Copyright (C) 2013 Simple Photo Albums
+# Copyright (C) 2014 Simple Photo Albums
 # This file is distributed under the same license as the Simple Photo Albums package.
 msgid ""
 msgstr ""
-"Project-Id-Version: Simple Photo Albums 1.0.0\n"
-"Report-Msgid-Bugs-To: http://wordpress.org/tag/simple-photo-albums\n"
-"POT-Creation-Date: 2013-09-04 01:50:14+00:00\n"
+"Project-Id-Version: Simple Photo Albums 1.0.3\n"
+"Report-Msgid-Bugs-To: "
+"http://wordpress.org/support/plugin/simple-photo-albums\n"
+"POT-Creation-Date: 2014-02-21 07:53:24+00:00\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2013-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2014-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 
-#. #-#-#-#-#  simple-photo-albums.pot (Simple Photo Albums 1.0.0)  #-#-#-#-#
 #. Plugin Name of the plugin/theme
-#: admin/includes/settings.php:25
 msgid "Simple Photo Albums"
 msgstr ""
 
-#: admin/includes/settings.php:32
+#: admin/includes/settings.php:28
 msgid "Gallery Script"
 msgstr ""
 
-#: includes/jetpack-carousel.php:59
+#: includes/jetpack-carousel.php:62
 msgid "Jetpack Carousel"
 msgstr ""
 
-#: includes/swipebox.php:56
+#: includes/magnific-popup.php:59
+msgid "Magnific Popup"
+msgstr ""
+
+#: includes/swipebox.php:59
 msgid "Swipebox"
 msgstr ""
 
@@ -35,13 +38,13 @@ msgid "http://wordpress.org/plugins/simple-photo-albums/"
 msgstr ""
 
 #. Description of the plugin/theme
-msgid "A shortcode for creating a photo album from a group of galleries."
+msgid "A shortcode for creating photo albums from a group of galleries."
 msgstr ""
 
 #. Author of the plugin/theme
-msgid "Blazer Six"
+msgid "AudioTheme"
 msgstr ""
 
 #. Author URI of the plugin/theme
-msgid "http://www.blazersix.com/"
+msgid "http://audiotheme.com/"
 msgstr ""

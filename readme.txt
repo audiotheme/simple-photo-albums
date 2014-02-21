@@ -2,7 +2,7 @@
 Contributors: audiotheme, bradyvercher
 Tags: photos, albums, gallery
 Requires at least: 3.5
-Tested up to: 3.7
+Tested up to: 3.8.1
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -25,7 +25,7 @@ Wrap a group of `[gallery]` shortcodes with the `[simple_photo_album]` shortcode
 
 Each gallery becomes an album and requires clicking through to see the actual gallery itself. This example will render the same as `[gallery ids="1,4,7"]`, which admittedly isn't very useful.
 
-However, there are a few attributes that may be beneficial and things really shine when paired with third-party scripts like [Jetpack's Carousel](http://jetpack.me/support/carousel/) or [Swipebox](http://brutaldesign.github.io/swipebox/) -- native support is included for both (select one on the **Media &rarr; Settings** screen).
+However, there are a few attributes that may be beneficial and things really shine when paired with third-party scripts like [Jetpack's Carousel](http://jetpack.me/support/carousel/), [Magnific Popup](http://dimsemenov.com/plugins/magnific-popup/), or [Swipebox](http://brutaldesign.github.io/swipebox/) -- native support is included for all (select one on the **Media &rarr; Settings** screen).
 
 Galleries within the album shortcode may include a `gallery_link` attribute to link the cover image to an arbitrary permalink when a third-party script isn't being used:
 
@@ -62,9 +62,12 @@ Installing Simple Photo Albums is just like installing most other plugins. [Chec
 == Frequently Asked Questions ==
 
 = Can support be added for additional third-party scripts? =
-Yes. Find the Jetpack Carousel and Swipebox files in the plugin folder as an example. Both are written as plugins to demonstrate how support can be added for just about any script.
+Yes. Find the Jetpack Carousel, Magnific Popup and Swipebox files in the plugin folder as an example. They're all written as plugins to demonstrate how support can be added for just about any script.
 
 == Changelog ==
+
+= 1.1.0 =
+* Added support for Magnific Popup.
 
 = 1.0.3 =
 * Load the plugin text domain on 'plugins_loaded' in preparation for language packs.
