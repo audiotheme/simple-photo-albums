@@ -5,6 +5,15 @@ module.exports = function(grunt) {
 
 	grunt.initConfig({
 
+		makepot: {
+			plugin: {
+				options: {
+					mainFile: 'simple-photo-albums.php',
+					type: 'wp-plugin'
+				}
+			}
+		}
+
 	});
 
 	/**
@@ -24,29 +33,6 @@ module.exports = function(grunt) {
 				'--title=Simple Photo Albums',
 				'--main=SimplePhotoAlbums',
 				'--report=docs/_report.xml'
-			],
-			opts: { stdio: 'inherit' }
-		}, done);
-	});
-
-	/**
-	 * Generate a POT file for translating plugin strings.
-	 *
-	 * The WordPress i18n tools needs to exist at '/wp-content/i18n-tools/',
-	 * with php-cli and gettext in the system path to run this task.
-	 *
-	 * @link http://i18n.svn.wordpress.org/tools/trunk/
-	 */
-	grunt.registerTask('makepot', function() {
-		var done = this.async();
-
-		grunt.util.spawn({
-			cmd: 'php',
-			args: [
-				'../../i18n-tools/makepot.php',
-				'wp-plugin',
-				'.',
-				'languages/simple-photo-albums.pot'
 			],
 			opts: { stdio: 'inherit' }
 		}, done);
