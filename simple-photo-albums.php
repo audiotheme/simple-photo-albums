@@ -129,6 +129,7 @@ class Sphoa {
 
 		// Load default gallery scripts.
 		include( plugin_dir_path( __FILE__ ) . 'includes/jetpack-carousel.php' );
+		include( plugin_dir_path( __FILE__ ) . 'includes/magnific-popup.php' );
 		include( plugin_dir_path( __FILE__ ) . 'includes/swipebox.php' );
 
 		if ( is_admin() ) {
