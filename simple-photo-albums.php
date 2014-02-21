@@ -145,9 +145,7 @@ class Sphoa {
 	 * @since 1.0.0
 	 */
 	public function load_textdomain() {
-		$locale = apply_filters( 'plugin_locale', get_locale(), 'simple-photo-albums' );
-		load_textdomain( 'simple-photo-albums', WP_LANG_DIR . '/simple-photo-albums/' . $locale . '.mo' );
-		load_plugin_textdomain( 'simple-photo-albums', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
+		load_plugin_textdomain( 'simple-photo-albums', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
 	}
 
 	/**
