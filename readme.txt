@@ -55,6 +55,10 @@ Any display-related attributes that can be used on native gallery shortcodes can
 * [Follow @audiotheme](https://twitter.com/AudioTheme)
 * [Visit AudioTheme](http://audiotheme.com/)
 
+= Translation Credits =
+
+* French (fr_FR) - Gwenhael Le Mansec [v1.1.1]
+
 == Installation ==
 
 Installing Simple Photo Albums is just like installing most other plugins. [Check out the codex](http://codex.wordpress.org/Managing_Plugins#Installing_Plugins) if you have any questions.
@@ -65,6 +69,9 @@ Installing Simple Photo Albums is just like installing most other plugins. [Chec
 Yes. Find the Jetpack Carousel, Magnific Popup and Swipebox files in the plugin folder as an example. They're all written as plugins to demonstrate how support can be added for just about any script.
 
 == Changelog ==
+
+= 1.1.1 =
+* Added French translation.
 
 = 1.1.0 =
 * Added support for Magnific Popup.
