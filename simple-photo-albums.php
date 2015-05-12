@@ -9,11 +9,11 @@
  *
  * @wordpress-plugin
  * Plugin Name: Simple Photo Albums
- * Plugin URI: http://wordpress.org/plugins/simple-photo-albums/
+ * Plugin URI: https://audiotheme.com/view/simple-photo-albums/?utm_source=wordpress-plugin&utm_medium=link&utm_content=simple-photo-albums-plugin-uri&utm_campaign=plugins
  * Description: A shortcode for creating photo albums from a group of galleries.
  * Version: 1.1.1
  * Author: AudioTheme
- * Author URI: http://audiotheme.com/
+ * Author URI: https://audiotheme.com/?utm_source=wordpress-plugin&utm_medium=link&utm_content=simple-photo-albums-author-uri&utm_campaign=plugins
  * License: GPL-2.0+
  * License URI: http://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain: simple-photo-albums

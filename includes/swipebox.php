@@ -13,7 +13,7 @@
  * Description: Swipebox support for Simple Photo Albums.
  * Version: 1.0.0
  * Author: AudioTheme
- * Author URI: http://audiotheme.com/
+ * Author URI: https://audiotheme.com/
  * License: GPL-2.0+
  * License URI: http://www.gnu.org/licenses/gpl-2.0.html
  */

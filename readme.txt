@@ -2,7 +2,7 @@
 Contributors: audiotheme, bradyvercher
 Tags: photos, albums, gallery
 Requires at least: 3.5
-Tested up to: 4.1
+Tested up to: 4.2
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -25,7 +25,7 @@ Wrap a group of `[gallery]` shortcodes with the `[simple_photo_album]` shortcode
 
 Each gallery becomes an album and requires clicking through to see the actual gallery itself. This example will render the same as `[gallery ids="1,4,7"]`, which admittedly isn't very useful.
 
-However, there are a few attributes that may be beneficial and things really shine when paired with third-party scripts like [Jetpack's Carousel](http://jetpack.me/support/carousel/), [Magnific Popup](http://dimsemenov.com/plugins/magnific-popup/), or [Swipebox](http://brutaldesign.github.io/swipebox/) -- native support is included for all (select one on the **Media &rarr; Settings** screen).
+However, there are a few attributes that may be beneficial and things really shine when paired with third-party scripts like [Jetpack's Carousel](http://jetpack.me/support/carousel/), [Magnific Popup](http://dimsemenov.com/plugins/magnific-popup/), or [Swipebox](http://brutaldesign.github.io/swipebox/) -- native support is included for all (select one on the **Settings &rarr; Media** screen).
 
 Galleries within the album shortcode may include a `gallery_link` attribute to link the cover image to an arbitrary permalink when a third-party script isn't being used:
 
@@ -49,11 +49,11 @@ Any display-related attributes that can be used on native gallery shortcodes can
 
 = Additional Resources =
 
+* [Check out AudioTheme](https://audiotheme.com/?utm_source=wordpress.org&utm_medium=link&utm_content=simple-photo-albums-readme&utm_campaign=plugins) and tell your friends!
+* Help out on the [support forums](https://wordpress.org/support/plugin/simple-photo-albums).
+* Consider [contributing on GitHub](https://github.com/audiotheme/simple-photo-albums)
 * [Write a review](http://wordpress.org/support/view/plugin-reviews/simple-photo-albums#postform)
-* [Have a question?](http://wordpress.org/support/plugin/simple-photo-albums)
-* [Contribute on GitHub](https://github.com/audiotheme/simple-photo-albums)
-* [Follow @audiotheme](https://twitter.com/AudioTheme)
-* [Visit AudioTheme](http://audiotheme.com/)
+* [Follow @AudioTheme](https://twitter.com/AudioTheme)
 
 = Translation Credits =
 
