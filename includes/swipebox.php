@@ -11,7 +11,7 @@
  * Plugin Name: Simple Photo Albums (Swipebox)
  * Plugin URI: http://wordpress.org/plugins/simple-photo-albums/
  * Description: Swipebox support for Simple Photo Albums.
- * Version: 1.0.0
+ * Version: 1.0.1
  * Author: AudioTheme
  * Author URI: https://audiotheme.com/
  * License: GPL-2.0+
@@ -66,7 +66,7 @@ class Sphoa_GalleryScript_Swipebox {
 	 * @since 1.0.0
 	 */
 	public static function register_assets() {
-		wp_enqueue_script( 'simple-photo-albums-swipebox', plugin_dir_url( __FILE__ ) . 'libraries/swipebox/jquery.swipebox.min.js', array( 'jquery' ), '1.2.1', true );
+		wp_enqueue_script( 'simple-photo-albums-swipebox', plugin_dir_url( __FILE__ ) . 'libraries/swipebox/jquery.swipebox.min.js', array( 'jquery' ), '1.4.4', true );
 		wp_enqueue_style( 'simple-photo-albums-swipebox', plugin_dir_url( __FILE__ ) . 'libraries/swipebox/swipebox.css' );
 	}
 
