@@ -17,7 +17,6 @@
  * License: GPL-2.0+
  * License URI: http://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain: simple-photo-albums
- * Domain Path: /languages
  */
 
 /**
@@ -140,13 +139,10 @@ class Sphoa {
 	/**
 	 * Support localization for the plugin strings.
 	 *
-	 * @link http://ottopress.com/2013/language-packs-101-prepwork/
-	 * @link http://www.geertdedeckere.be/article/loading-wordpress-language-files-the-right-way
-	 *
 	 * @since 1.0.0
 	 */
 	public function load_textdomain() {
-		load_plugin_textdomain( 'simple-photo-albums', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
+		load_plugin_textdomain( 'simple-photo-albums' );
 	}
 
 	/**
