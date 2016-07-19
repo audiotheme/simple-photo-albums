@@ -11,7 +11,7 @@
  * Plugin Name: Simple Photo Albums (Jetpack Carousel)
  * Plugin URI: http://wordpress.org/plugins/simple-photo-albums/
  * Description: Jetpack Carousel support for Simple Photo Albums.
- * Version: 1.0.0
+ * Version: 1.0.1
  * Author: AudioTheme
  * Author URI: https://audiotheme.com/
  * License: GPL-2.0+
@@ -43,10 +43,11 @@ class Sphoa_GalleryScript_Jetpack_Carousel {
 
 		// Don't register if the this isn't the active script.
 		$settings = sphoa()->get_settings();
-		if ( 'jetpack' != $settings['gallery_script'] ) {
+		if ( 'jetpack-carousel' != $settings['gallery_script'] ) {
 			return;
 		}
 
+		add_action( 'simple_photo_albums_shortcode_before', array( __CLASS__, 'force_enable_carousel' ) );
 		add_action( 'simple_photo_albums_print_footer_scripts', array( __CLASS__, 'print_script' ) );
 	}
 
@@ -64,6 +65,15 @@ class Sphoa_GalleryScript_Jetpack_Carousel {
 	}
 
 	/**
+	 * Force enable Jetpack Carousel.
+	 *
+	 * @since 1.0.1
+	 */
+	public static function force_enable_carousel() {
+		add_filter( 'jp_carousel_force_enable', '__return_true' );
+	}
+
+	/**
 	 * Print scripts for integrating albums with the Jetpack Carousel.
 	 *
 	 * @since 1.0.0
@@ -75,7 +85,7 @@ class Sphoa_GalleryScript_Jetpack_Carousel {
 		foreach ( $albums as $gallery_id => $gallery ) {
 			$images = array();
 			foreach ( $gallery['attachment_ids'] as $id ) {
-				$images[] = self::get_image( $id );
+				$images[] = wp_get_attachment_image( $id, 'full', false );
 			}
 
 			$data[ 'album-' . $gallery_id ]['extraData'] = self::get_gallery_data( $gallery['post_id'] );
@@ -143,59 +153,6 @@ class Sphoa_GalleryScript_Jetpack_Carousel {
 		<?php
 	}
 
-	/**
-	 * Get an image tag with the required Jetpack data attributes.
-	 *
-	 * @since 1.0.0
-	 * @see Jetpack_Carousel::add_data_to_images()
-	 *
-	 * @param int $attachment_id Attachment ID.
-	 * @return string
-	 */
-	public function get_image( $attachment_id ) {
-		$attachment_id   = intval( $attachment_id );
-		$orig_file       = wp_get_attachment_image_src( $attachment_id, 'full' );
-		$orig_file       = isset( $orig_file[0] ) ? $orig_file[0] : wp_get_attachment_url( $attachment_id );
-		$meta            = wp_get_attachment_metadata( $attachment_id );
-		$size            = isset( $meta['width'] ) ? intval( $meta['width'] ) . ',' . intval( $meta['height'] ) : '';
-		$img_meta        = ( ! empty( $meta['image_meta'] ) ) ? (array) $meta['image_meta'] : array();
-		$comments_opened = intval( comments_open( $attachment_id ) );
-
-		$medium_file_info = wp_get_attachment_image_src( $attachment_id, 'medium' );
-		$medium_file      = isset( $medium_file_info[0] ) ? $medium_file_info[0] : '';
-		$large_file_info  = wp_get_attachment_image_src( $attachment_id, 'large' );
-		$large_file       = isset( $large_file_info[0] ) ? $large_file_info[0] : '';
-
-		$attachment       = get_post( $attachment_id );
-		$attachment_title = wptexturize( $attachment->post_title );
-		$attachment_desc  = wpautop( wptexturize( $attachment->post_content ) );
-
-		if ( ! empty( $img_meta ) ) {
-			foreach ( $img_meta as $k => $v ) {
-				if ( 'latitude' == $k || 'longitude' == $k )
-					unset( $img_meta[$k] );
-			}
-		}
-
-		$img_meta = json_encode( array_map( 'strval', $img_meta ) );
-
-		return wp_get_attachment_image(
-			$attachment_id,
-			'full',
-			false,
-			array(
-				'data-attachment-id'     => $attachment_id,
-				'data-orig-file'         => esc_attr( $orig_file ),
-				'data-orig-size'         => $size,
-				'data-comments-opened'   => $comments_opened,
-				'data-image-meta'        => esc_attr( $img_meta ),
-				'data-image-title'       => esc_attr( $attachment_title ),
-				'data-image-description' => esc_attr( $attachment_desc ),
-				'data-medium-file'       => esc_attr( $medium_file ),
-				'data-large-file'        => esc_attr( $large_file ),
-			)
-		);
-	}
 
 	/**
 	 * Get Jetpack gallery data.
@@ -206,7 +163,7 @@ class Sphoa_GalleryScript_Jetpack_Carousel {
 	 * @param int $post_id Post ID.
 	 * @return array
 	 */
-	public function get_gallery_data( $post_id ) {
+	public static function get_gallery_data( $post_id ) {
 		$blog_id = (int) get_current_blog_id();
 
 		if ( defined( 'IS_WPCOM' ) && IS_WPCOM ) {
