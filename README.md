@@ -1,13 +1,13 @@
-# Simple Photo Albums #
+# Simple Photo Albums
 
 A WordPress plugin to create photo albums from a group of native galleries.
 
 __Contributors:__ [Brady Vercher](https://twitter/bradyvercher)  
-__Requires:__ 3.5  
-__Tested up to:__ 4.2  
+__Requires:__ 4.3  
+__Tested up to:__ 4.6  
 __License:__ [GPL-2.0+](http://www.gnu.org/licenses/gpl-2.0.html)
 
-## Usage ##
+## Usage
 
 Wrap a group of `[gallery]` shortcodes with the `[simple_photo_album]` shortcode:
 
