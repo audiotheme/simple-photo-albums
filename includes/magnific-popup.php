@@ -11,7 +11,7 @@
  * Plugin Name: Simple Photo Albums (Magnific Popup)
  * Plugin URI: http://wordpress.org/plugins/simple-photo-albums/
  * Description: Magnific Popup support for Simple Photo Albums.
- * Version: 1.0.0
+ * Version: 1.0.1
  * Author: AudioTheme
  * Author URI: https://audiotheme.com/
  * License: GPL-2.0+
@@ -66,7 +66,7 @@ class Sphoa_GalleryScript_MagnificPopup {
 	 * @since 1.0.0
 	 */
 	public static function register_assets() {
-		wp_enqueue_script( 'simple-photo-albums-magnific-popup', plugin_dir_url( __FILE__ ) . 'libraries/magnific-popup/jquery.magnific-popup.js', array( 'jquery' ), '0.9.9', true );
+		wp_enqueue_script( 'simple-photo-albums-magnific-popup', plugin_dir_url( __FILE__ ) . 'libraries/magnific-popup/jquery.magnific-popup.js', array( 'jquery' ), '1.1.0', true );
 		wp_enqueue_style( 'simple-photo-albums-magnific-popup', plugin_dir_url( __FILE__ ) . 'libraries/magnific-popup/magnific-popup.css' );
 	}
 
